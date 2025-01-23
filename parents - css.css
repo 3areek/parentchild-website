@@ -1,0 +1,152 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Light, neutral background */
+    color: #333; /* Dark text for contrast */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; /* Dark, easily readable text for headers */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555; /* Lighter text color for paragraphs */
+}
+
+/* Header */
+header {
+    background-color: #2980b9; /* Soft blue header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #3498db; /* Bright, child-friendly blue */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Interactive Elements (For Kids) */
+button {
+    background-color: #27ae60; /* Fun, friendly green */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ecc71;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Interactive Games or Animations */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.kid-game {
+    width: 200px;
+    height: 200px;
+    background-color: #f39c12; /* Bright orange for visibility */
+    border-radius: 10px;
+    animation: bounce 1s infinite;
+    margin: 20px auto;
+}
+
+.kid-game:hover {
+    background-color: #e67e22; /* Hover effect for kids' game */
+}
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Dark footer for contrast */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Accessibility */
+a:focus, button:focus {
+    outline: 3px solid #f1c40f; /* Accessibility focus outline for better visibility */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .kid-game {
+        width: 150px;
+        height: 150px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
